@@ -30,28 +30,7 @@ class DayType(str, Enum):
     DAY_02 = "day_02"
     DAY_03 = "day_03"
     DAY_04 = "day_04"
-    DAY_05 = "day_05"
-    DAY_06 = "day_06"
-    DAY_07 = "day_07"
-    DAY_08 = "day_08"
-    DAY_09 = "day_09"
-    DAY_10 = "day_10"
-    DAY_11 = "day_11"
-    DAY_12 = "day_12"
-    DAY_13 = "day_13"
-    DAY_14 = "day_14"
-    DAY_15 = "day_15"
-    DAY_16 = "day_16"
-    DAY_17 = "day_17"
-    DAY_18 = "day_18"
-    DAY_19 = "day_19"
-    DAY_20 = "day_20"
-    DAY_21 = "day_21"
-    DAY_22 = "day_22"
-    DAY_23 = "day_23"
-    DAY_24 = "day_24"
-    DAY_25 = "day_25"
-    # [[[end]]] (checksum: 04b39e2f173693b4e01bbb7a22291090)
+    # [[[end]]] (sum: FAzVlq6i/s)
 
 
 class SortType(str, Enum):
