@@ -14,7 +14,14 @@ def part_1(puzzle: str) -> int:
 
 
 def part_2(puzzle: str) -> int:
-    pass
+    total = 0
+    for pair in puzzle.split(","):
+        lower, upper = map(int, pair.split("-"))
+        for id in map(str, range(lower, upper + 1)):
+            if len(id) > 1 and id in (id + id)[1:-1]:
+                total += int(id)
+
+    return total
 
 
 # -- Tests
@@ -29,9 +36,9 @@ def test_part_1() -> None:
     assert part_1(test_input) == 1227775554
 
 
-# def test_part_2() -> None:
-#     test_input = get_example_input()
-#     assert part_2(test_input) is not None
+def test_part_2() -> None:
+    test_input = get_example_input()
+    assert part_2(test_input) == 4174379265
 
 
 @no_input_skip
@@ -40,10 +47,10 @@ def test_part_1_real() -> None:
     assert part_1(real_input) == 44854383294
 
 
-# @no_input_skip
-# def test_part_2_real() -> None:
-#     real_input = read_input(__file__)
-#     assert part_2(real_input) is not None
+@no_input_skip
+def test_part_2_real() -> None:
+    real_input = read_input(__file__)
+    assert part_2(real_input) == 55647141923
 
 
 # -- Main
